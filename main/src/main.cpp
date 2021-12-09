@@ -35,9 +35,8 @@ auto main(int argc, char **argv) -> int {
     //
     // TODO(Abdessattar): UTF-8 to be tested on Windows
     cxxopts::Options options(ASAP_PROJECT_NAME, ASAP_PROJECT_DESCRIPTION);
-    options.add_options()("v,version", "Show version")("h,help", "Show usage information")("t,test",
-        "Test option with value",
-        cxxopts::value<std::string>())("c,chinese", "中文帮助文本", cxxopts::value<std::string>());
+    options.add_options()("v,version", "Show version")("h,help", "Show usage information")(
+        "t,test", "Test option with value", cxxopts::value<std::string>());
     auto result = options.parse(argc, argv);
 
     if (result.count("help") != 0U) {
