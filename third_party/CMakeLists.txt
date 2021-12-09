@@ -53,3 +53,12 @@ if(WIN32)
 endif()
 
 add_subdirectory(spdlog)
+
+# --------------------------------------------------------------------------------------------------
+# cxxopts
+# --------------------------------------------------------------------------------------------------
+
+set(CXXOPTS_BUILD_EXAMPLES
+    OFF
+    CACHE BOOL "Build cxxopts examples")
+add_subdirectory(cxxopts)
