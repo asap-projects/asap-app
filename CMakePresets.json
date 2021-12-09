@@ -256,6 +256,7 @@
       "hidden": true,
       "jobs": 4,
       "targets": [
+        "asap-app",
         "all",
         "ccov-all",
         "ccov-clean",
@@ -272,6 +273,7 @@
         "dev-base"
       ],
       "targets": [
+        "asap-app",
         "all",
         "build-all-tests",
         "dox",
@@ -285,6 +287,7 @@
         "dev-base"
       ],
       "targets": [
+        "asap-app",
         "all",
         "ccov-all",
         "ccov-clean",
@@ -353,6 +356,7 @@
       "hidden": true,
       "jobs": 4,
       "targets": [
+        "asap-app",
         "build-all-tests",
         "dox",
         "sphinx"
