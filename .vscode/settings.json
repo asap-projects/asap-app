@@ -128,7 +128,7 @@
   // One tab = 2 spaces
   "editor.tabSize": 2,
   // Controls whether a list of suggestions is provided based on the text in the document
-  "editor.wordBasedSuggestions": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
   // There is no need to confirm when deleting files
   "explorer.confirmDelete": false,
   // No confirmation is required when moving files
@@ -149,8 +149,6 @@
   "search.smartCase": true,
   // The integrated terminal defaults to PowerShell
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  // Enable visual ringing tone for integrated terminal
-  "terminal.integrated.enableBell": true,
   // Integrated terminal code: zh_CN.UTF-8
   "terminal.integrated.env.windows": {
     "LC_ALL": "en_US.UTF-8"
@@ -287,4 +285,8 @@
   "cmakeFormat.args": [
     "--config-file=${workspaceFolder}/.cmake-format.yaml"
   ],
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true,
 }
